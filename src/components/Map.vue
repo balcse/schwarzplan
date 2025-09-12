@@ -10,8 +10,7 @@
 import { ref, defineEmits, onMounted, watch, withDefaults, defineProps } from 'vue';
 import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-
-
+const maptilerKey = import.meta.env.VITE_MAPTILER_KEY;
 
 let map: maplibregl.Map | null = null;
 
@@ -95,7 +94,7 @@ onMounted(() => {
             },
             "openmaptiles": {
                 "type": "vector",
-                "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL"
+                "url": `https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=${maptilerKey}`
             }
         },
         "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
