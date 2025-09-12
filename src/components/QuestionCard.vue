@@ -2,7 +2,6 @@
     <div v-if="question">
         <p>Frage {{ question.counter }}</p>
         <h2>Welche Stadt sieht man hier?</h2>
-        <p>{{ question.correct }}</p>
         <div class="flex flex-column gap-2">
             <div v-for="answer in allAnswers" :key="answer" class="flex align-items-center">
                 <RadioButton :value="answer" v-model="selectedAnswer" :input-id="answer" />
