@@ -1,5 +1,5 @@
 <template>
-    <a href="/setup">Setup</a>
+    <a href="/schwarzplan/setup">Setup</a>
     <p></p>
-    <a href="/play">Play</a>
+    <a href="/schwarzplan/play">Play</a>
 </template>
