@@ -183,9 +183,10 @@ onMounted(() => {
 
 <style scoped>
 #map {
-    width: 800px;
-    height: 800px;
-    min-height: 0;
+    width: 100%;
+    min-height: 350px;
+    aspect-ratio: 1 / 1;
     min-width: 0;
+    box-sizing: border-box;
 }
 </style>
