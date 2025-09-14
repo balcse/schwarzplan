@@ -1,20 +1,22 @@
 <template>
-    <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-6 d-flex flex-column h-100 p-0">
-                <Map ref="mapRef" class="flex-fill w-100" :mapextent="mapextent" :basemap-visible="true" />
-            </div>
-            <div class="col-6 d-flex flex-column h-100 p-0 align-items-start">
-                <Setup class="w-100" @submit="handleSubmit" />
-                <div class="w-100" style="max-height: 30vh; overflow-y: auto;">
-                    <QuestionList @question:select="handleQuestionSelect" />
-                </div>
+    <div class="setup-flex-container">
+        <div class="setup-flex-item setup-map-wrapper">
+            <Map ref="mapRef" :mapextent="mapextent" :basemapVisible="basemapVisible" />
+            <button class="vorschau-btn" @click="basemapVisible = !basemapVisible">
+                {{ basemapVisible ? 'Basemap ausblenden' : 'Vorschau' }}
+            </button>
+        </div>
+        <div class="setup-flex-item">
+            <Setup @submit="handleSubmit" />
+            <div class="setup-question-list">
+                <QuestionList @question:select="handleQuestionSelect" />
             </div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+
 import Map from './Map.vue';
 import Setup from './AddQuestion.vue';
 import QuestionList from './QuestionList.vue';
@@ -28,7 +30,9 @@ const mapextent = ref({
     lat: 51.666305041908316,
     lon: 10.172657751668567,
 });
+
 const mapRef = ref();
+const basemapVisible = ref(true);
 
 function handleMapExtentUpdate(newExtent: { lat: number; lon: number; zoom: number; }) {
     mapextent.value = {
@@ -57,18 +61,60 @@ function handleSubmit(payload: { correct: string; wrong: string[] }) {
         payload.correct,
         payload.wrong
     );
+
     // Handle the submitted answers as needed
 }
 </script>
-<style>
-html,
-body,
-#app {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+<style scoped>
+.vorschau-btn {
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #888;
+    background: #f7f7f7;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.vorschau-btn:hover {
+    background: #e0e0e0;
+}
+.setup-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
     box-sizing: border-box;
-    overflow: hidden;
+}
+.setup-flex-item {
+    min-width: 0;
+    box-sizing: border-box;
+}
+.setup-map-wrapper {
+    width: 90vh;
+    min-height: 350px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1rem;
+    display: block;
+}
+.setup-question-list {
+    width: 100%;
+    max-height: 30vh;
+    overflow-y: auto;
+}
+@media (max-width: 1050px) {
+    .setup-flex-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .setup-flex-item {
+        width: 100%;
+        min-width: 0;
+        max-width: 100vw;
+    }
+    .setup-map-wrapper {
+        min-height: 250px;
+    }
 }
 </style>

@@ -3,11 +3,11 @@
     <div v-for="(question, index) in gameStore.questionlist" :key="index">
       <i class="pi pi-eye" @click="selectQuestion(question)"></i>
       <i class="pi pi-trash" @click="gameStore.removeQuestion(question.counter)"></i>
-      <p>Question {{ index + 1 }}: {{ question.correct }}</p>
+      <p>Frage {{ index + 1 }}: {{ question.correct }}</p>
       <p>{{ question }}</p>
       <!-- <p>Wrong Answers: {{ question.wrong.join(', ') }}</p> -->
     </div>
-    <button @click="gameStore.downloadQuestions()">Download Questions</button>
+    <button @click="gameStore.downloadQuestions()">Fragen herunterladen</button>
   </div>
 </template>
 

@@ -1,13 +1,11 @@
 <template>
     <div v-if="gameStore.questionlist.length">
         <div v-for="question in gameStore.questionlist" :key="question.counter">
-            <div v-if="question.counter == currentQuestion && !finished"
-                style="display: flex; flex-direction: row; gap: 2rem; align-items: flex-start;">
-                <div style="flex: 1 1 0; min-width: 0;">
-                    <Map :mapextent="GetMapextent()" :basemapVisible="basemapVisible"
-                        style="height: 300px; width: 100%; margin-bottom: 1rem;" />
+            <div v-if="question.counter == currentQuestion && !finished" class="play-flex-container">
+                <div class="play-flex-item play-map-wrapper">
+                    <Map :mapextent="GetMapextent()" :basemapVisible="basemapVisible" />
                 </div>
-                <div style="flex: 1 1 0; min-width: 0;">
+                <div class="play-flex-item">
                     <div v-if="showAnswer">
                         <p v-if="correctAnswer">Die richtige Antwort ist: {{ correctAnswer }}</p>
                         <button @click="nextQuestion(); showAnswer = false;">Nächste Frage</button>
@@ -83,3 +81,44 @@ function nextQuestion() {
 }
 
 </script>
+
+<style scoped>
+
+
+.play-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.play-flex-item {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+
+.play-map-wrapper {
+    width: 90vh;
+    min-height: 350px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+@media (max-width: 1050px) {
+    .play-flex-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .play-flex-item {
+        width: 100%;
+        min-width: 0;
+        max-width: 100vw;
+    }
+    .play-map-wrapper {
+        min-height: 250px;
+    }
+}
+</style>

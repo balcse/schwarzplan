@@ -1,11 +1,12 @@
 <template>
     <div>
-        <h1>Add Question</h1>
+        <p>Neue Frage erstellen</p>
+        <p>Welche Stadt sieht man hier?</p>
         <InputText placeholder="Richtig" v-model="correct" />
         <InputText placeholder="Falsch" v-model="wrong1" />
         <InputText placeholder="Falsch" v-model="wrong2" />
         <InputText placeholder="Falsch" v-model="wrong3" />
-        <button @click="submitAnswers">Submit</button>
+        <button @click="submitAnswers">Frage erstellen</button>
     </div>
 </template>
 
@@ -30,6 +31,10 @@ function submitAnswers() {
         correct: correct.value,
         wrong: [wrong1.value, wrong2.value, wrong3.value],
     });
+    correct.value = '';
+    wrong1.value = '';
+    wrong2.value = '';
+    wrong3.value = '';
 }
 
 </script>
