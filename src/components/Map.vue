@@ -80,13 +80,13 @@ onMounted(() => {
             "cartodb": {
                 "type": "raster",
                 "tiles": [
-                    "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}.png",
-                    // "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-                    // "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
-                    // "https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+                    "https://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+                    "https://b.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+                    "https://c.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+
                 ],
                 "tileSize": 256,
-                "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>, &copy; <a href=\"https://carto.com/attributions\">CARTO</a>"
+                "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>"
             },
             "openmaptiles": {
                 "type": "vector",
