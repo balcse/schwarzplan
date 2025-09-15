@@ -75,43 +75,37 @@ watch(() => props.basemapVisible, (visible: boolean) => {
 onMounted(() => {
     const style: any = {
         "version": 8,
-        "name": "Custom OSM Basemap with Buildings",
-        "metadata": {
-            "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
-            "maputnik:renderer": "mbgljs",
-            "openmaptiles:version": "3.x"
-        },
+        "name": "CartoDB Positron (light_all)",
         "sources": {
-            "osm": {
+            "cartodb": {
                 "type": "raster",
                 "tiles": [
-                    "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                    "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                    "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    "https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}.png",
+                    // "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+                    // "https://c.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+                    // "https://d.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
                 ],
                 "tileSize": 256,
-                "attribution": "© OpenStreetMap contributors"
+                "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>, &copy; <a href=\"https://carto.com/attributions\">CARTO</a>"
             },
             "openmaptiles": {
                 "type": "vector",
                 "url": `https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=${maptilerKey}`
             }
         },
-        "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
-        "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
         "layers": [
             {
                 "id": "osm-basemap",
                 "type": "raster",
-                "source": "osm",
+                "source": "cartodb",
                 "minzoom": 0,
-                "maxzoom": 22,
+                "maxzoom": 20,
                 "layout": {
                     "visibility": props.basemapVisible ? "visible" : "none"
                 }
             }
         ],
-        "id": "osm-liberty"
+        "id": "cartodb-positron"
     };
 
 
