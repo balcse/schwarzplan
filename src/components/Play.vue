@@ -1,25 +1,23 @@
 <template>
     <div v-if="gameStore.questionlist.length">
-        <div v-for="question in gameStore.questionlist" :key="question.counter">
-            <div v-if="question.counter == currentQuestion && !finished" class="play-flex-container">
+        <div v-for="i in gameStore.questionlist.length" :key="i">
+            <div v-if="gameStore.questionlist[i - 1].counter == currentQuestion && !finished" class="play-flex-container">
                 <div class="play-flex-item play-map-wrapper">
                     <Map :mapextent="GetMapextent()" :basemapVisible="basemapVisible" />
                 </div>
                 <div class="play-flex-item">
-                    <div v-if="showAnswer">
-                        <p v-if="correctAnswer">Die richtige Antwort ist: {{ correctAnswer }}</p>
-                        <button @click="nextQuestion(); showAnswer = false;">Nächste Frage</button>
-                    </div>
-                    <QuestionCard v-else :question="question" @answer:submit="handleAnswerSubmit" />
+                    <p>Frage {{ gameStore.questionlist[i - 1].counter }} / {{ gameStore.questionlist.length }}</p>
+                    <QuestionCard :question="gameStore.questionlist[i - 1]" @answer:submit="handleAnswerSubmit" />
+                    <Button v-if="showAnswer" @click="nextQuestion(); showAnswer = false;">{{ i === gameStore.questionlist.length ? 'Spiel abschließen' : 'Nächste Frage' }}</Button>
                 </div>
             </div>
-            <div v-else-if="question.counter == currentQuestion && finished">
+            <div v-else-if="gameStore.questionlist[i - 1].counter == currentQuestion && finished">
                 <h2>Quiz Fertig!</h2>
                 {{ correct }} von {{ correct + wrong }} richtig.
-                <button @click="currentQuestion = 1; finished = false; correct = 0; wrong = 0;">Nochmal Spielen</button>
-                <button
+                <Button @click="currentQuestion = 1; finished = false; correct = 0; wrong = 0;">Nochmal Spielen</Button>
+                <Button
                     @click="currentQuestion = 1; finished = false; correct = 0; wrong = 0; gameStore.clearQuestions()">Neues
-                    Spiel</button>
+                    Spiel</Button>
             </div>
         </div>
     </div>
@@ -32,6 +30,7 @@ import QuestionCard from './QuestionCard.vue';
 import { useGameStore } from '@/stores/game';
 import { ref, computed, watch } from 'vue';
 import Map from './Map.vue';
+import Button from 'primevue/button';
 
 const currentQuestion = ref(1);
 const correctAnswer = ref<string | null>(null);
