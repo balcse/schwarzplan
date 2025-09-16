@@ -9,6 +9,15 @@ export const useGameStore = defineStore('game', () => {
         questionlist.value.push({ counter: counter.value++, zoomlevel, center, correct, wrong });
     }
 
+    function updateQuestion(counter: number, correct: string, wrong: string[]) {
+        const index = questionlist.value.findIndex(q => q.counter === counter);
+        const zoomlevel = questionlist.value[index]?.zoomlevel || 15;
+        const center = questionlist.value[index]?.center || [0, 0];
+        if (index !== -1) {
+            questionlist.value[index] = { counter, zoomlevel, center, correct, wrong };
+        }
+    }
+
     function removeQuestion(counter: number) {
         questionlist.value = questionlist.value.filter(q => q.counter !== counter);
         counter = 0;
@@ -65,5 +74,5 @@ export const useGameStore = defineStore('game', () => {
         counter.value = 1;
     }
 
-    return { questionlist, addQuestion, removeQuestion, downloadQuestions, loadQuestions, clearQuestions };
+    return { questionlist, addQuestion, removeQuestion, downloadQuestions, loadQuestions, clearQuestions, updateQuestion };
 });

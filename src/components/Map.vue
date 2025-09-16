@@ -31,6 +31,16 @@ const mapextent = ref({ ...props.mapextent });
 //     emit('update:mapextent', newVal);
 // });
 
+function lockMapInteraction() {
+    if (!map) return;
+    map.setMinZoom(props.mapextent.zoom);
+}
+
+function unlockMapInteraction() {
+    if (!map) return;
+    map.setMinZoom(0);
+}
+
 // Watch for prop changes from parent and update map view
 watch(() => props.mapextent, (newVal) => {
     if (map && newVal) {
@@ -52,21 +62,9 @@ watch(() => props.basemapVisible, (visible: boolean) => {
     if (map.getLayer('osm-basemap')) {
         map.setLayoutProperty('osm-basemap', 'visibility', visible ? 'visible' : 'none');
         if (!visible) {
-            map.boxZoom.disable();
-            map.doubleClickZoom.disable();
-            map.dragPan.disable();
-            map.dragRotate.disable();
-            map.keyboard.disable();
-            map.scrollZoom.disable();
-            map.touchZoomRotate.disable();
+            lockMapInteraction();
         } else {
-            map.boxZoom.enable();
-            map.doubleClickZoom.enable();
-            map.dragPan.enable();
-            map.dragRotate.enable();
-            map.keyboard.enable();
-            map.scrollZoom.enable();
-            map.touchZoomRotate.enable();
+            unlockMapInteraction();
         }
     }
 }, { immediate: true });
@@ -136,21 +134,9 @@ onMounted(() => {
             if (typeof props.basemapVisible === 'boolean' && map!.getLayer('osm-basemap')) {
                 map!.setLayoutProperty('osm-basemap', 'visibility', props.basemapVisible ? 'visible' : 'none');
                 if (!props.basemapVisible) {
-                    map!.boxZoom.disable();
-                    map!.doubleClickZoom.disable();
-                    map!.dragPan.disable();
-                    map!.dragRotate.disable();
-                    map!.keyboard.disable();
-                    map!.scrollZoom.disable();
-                    map!.touchZoomRotate.disable();
+                    lockMapInteraction();
                 } else {
-                    map!.boxZoom.enable();
-                    map!.doubleClickZoom.enable();
-                    map!.dragPan.enable();
-                    map!.dragRotate.enable();
-                    map!.keyboard.enable();
-                    map!.scrollZoom.enable();
-                    map!.touchZoomRotate.enable();
+                    unlockMapInteraction();
                 }
             }
             updateMapExtent();

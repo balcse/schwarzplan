@@ -21,7 +21,12 @@
             </div>
         </div>
     </div>
-    <UploadQuestions v-else />
+    <div v-else>
+    <h4>Aus Liste wählen</h4>
+    <GameList />
+    <h4>Oder Fragen hochladen</h4>
+    <UploadQuestions />
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -31,6 +36,7 @@ import { useGameStore } from '@/stores/game';
 import { ref, computed, watch } from 'vue';
 import Map from './Map.vue';
 import Button from 'primevue/button';
+import GameList from './GameList.vue';
 
 const currentQuestion = ref(1);
 const correctAnswer = ref<string | null>(null);
