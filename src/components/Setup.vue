@@ -2,12 +2,20 @@
     <div class="setup-flex-container">
         <div class="setup-flex-item setup-map-wrapper">
             <Map ref="mapRef" :mapextent="mapextent" :basemapVisible="basemapVisible" />
-            <button class="vorschau-btn" @click="basemapVisible = !basemapVisible">
-                {{ basemapVisible ? 'Basemap ausblenden' : 'Vorschau' }}
-            </button>
+            <Button @click="basemapVisible = !basemapVisible">
+                {{ basemapVisible ? 'Basemap ausblenden' : 'Basemap einblenden' }}
+            </Button>
         </div>
         <div class="setup-flex-item">
-            <Setup @submit="handleSubmit" />
+            <Button v-if="!ShowUpload" @click="ShowUpload = !ShowUpload">{{ 'Fragen hochladen' }}</Button>
+            <UploadQuestions v-if="ShowUpload && gameStore.questionlist.length === 0" />
+            <p>Neue Frage erstellen</p>
+            <Setup
+                @submit="handleSubmit"
+                :newQuestion="true"
+                :correct="''"
+                :wrong="[]"
+            />
             <div class="setup-question-list">
                 <QuestionList @question:select="handleQuestionSelect" />
             </div>
@@ -22,6 +30,8 @@ import Setup from './AddQuestion.vue';
 import QuestionList from './QuestionList.vue';
 import { ref } from 'vue';
 import { useGameStore } from '../stores/game.ts';
+import { Button } from 'primevue';
+import UploadQuestions from './UploadQuestions.vue';
 
 
 const gameStore = useGameStore();
@@ -33,6 +43,7 @@ const mapextent = ref({
 
 const mapRef = ref();
 const basemapVisible = ref(true);
+const ShowUpload = ref(false);
 
 function handleMapExtentUpdate(newExtent: { lat: number; lon: number; zoom: number; }) {
     mapextent.value = {
@@ -64,6 +75,7 @@ function handleSubmit(payload: { correct: string; wrong: string[] }) {
 
     // Handle the submitted answers as needed
 }
+
 </script>
 <style scoped>
 .vorschau-btn {
@@ -100,8 +112,9 @@ function handleSubmit(payload: { correct: string; wrong: string[] }) {
 }
 .setup-question-list {
     width: 100%;
-    max-height: 30vh;
-    overflow-y: auto;
+    /* max-height: 30vh; */
+    overflow-y: scroll;
+    max-height: 80vh;
 }
 @media (max-width: 1050px) {
     .setup-flex-container {
