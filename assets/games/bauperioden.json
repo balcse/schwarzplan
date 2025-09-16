@@ -1,0 +1,107 @@
+[
+  {
+    "counter": 1,
+    "zoomlevel": 14.55819210969385,
+    "center": [
+      53.5766393137865,
+      10.045356781044916
+    ],
+    "correct": "Nachkriegszeit",
+    "wrong": [
+      "Gründerzeit",
+      "Historismus",
+      "Postmoderne"
+    ],
+    "question": "Welche ist die dominante Bauperiode in diesem Ausschnitt?"
+  },
+  {
+    "counter": 2,
+    "zoomlevel": 14.75291271102474,
+    "center": [
+      48.19561263347987,
+      16.345105841323857
+    ],
+    "correct": "Gründerzeit",
+    "wrong": [
+      "Nachkriegszeit",
+      "Frühe Neuzeit",
+      "Mittelalter"
+    ],
+    "question": "Welche ist die dominante Bauperiode in diesem Ausschnitt?"
+  },
+  {
+    "counter": 3,
+    "zoomlevel": 15.724476369545366,
+    "center": [
+      49.018159595496996,
+      12.093211830679593
+    ],
+    "correct": "Mittelalter",
+    "wrong": [
+      "Gründerzeit",
+      "Zwischenkriegszeit",
+      "Barock"
+    ],
+    "question": "Welche ist die dominante Bauperiode in diesem Ausschnitt?"
+  },
+  {
+    "counter": 4,
+    "zoomlevel": 14.689214315046382,
+    "center": [
+      52.42299630208706,
+      10.782351011096239
+    ],
+    "correct": "Zwischenkriegszeit",
+    "wrong": [
+      "Gründerzeit",
+      "Postmoderne",
+      "Nachkriegszeit"
+    ],
+    "question": "Welche ist die dominante Bauperiode in diesem Ausschnitt?"
+  },
+  {
+    "counter": 5,
+    "zoomlevel": 15.453266074625839,
+    "center": [
+      49.01046544071278,
+      8.402221609595927
+    ],
+    "correct": "Barock",
+    "wrong": [
+      "Mittelalter",
+      "Gründerzeit",
+      "Zwischenkriegszeit"
+    ],
+    "question": "Welche ist die dominante Bauperiode in diesem Ausschnitt?"
+  },
+  {
+    "counter": 6,
+    "zoomlevel": 14.995180930451426,
+    "center": [
+      53.527504102211964,
+      10.148535045813674
+    ],
+    "correct": "Großsiedlungen",
+    "wrong": [
+      "Zwischenkriegszeit",
+      "Gründerzeit",
+      "Postmoderne"
+    ],
+    "question": "Welche ist die dominante Bauperiode in diesem Ausschnitt?"
+  },
+  {
+    "counter": 7,
+    "zoomlevel": 15.711767904496401,
+    "center": [
+      52.58850719130456,
+      13.274786064188447
+    ],
+    "correct": "Postmoderne",
+    "wrong": [
+      "Zwischenkriegszeit",
+      "Nachkriegszeit",
+      "Gründerzeit"
+    ],
+    "question": "Welche ist die dominante Bauperiode in diesem Ausschnitt?"
+  }
+]

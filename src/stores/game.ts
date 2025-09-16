@@ -5,16 +5,16 @@ export const useGameStore = defineStore('game', () => {
     const questionlist = ref<any[]>([]);
     const counter = ref(1);
 
-    function addQuestion(zoomlevel: number, center: [number, number], correct: string, wrong: string[]) {
-        questionlist.value.push({ counter: counter.value++, zoomlevel, center, correct, wrong });
+    function addQuestion(zoomlevel: number, center: [number, number], correct: string, wrong: string[], question?: string) {
+        questionlist.value.push({ counter: counter.value++, zoomlevel, center, correct, wrong, question });
     }
 
-    function updateQuestion(counter: number, correct: string, wrong: string[]) {
+    function updateQuestion(counter: number, correct: string, wrong: string[], question?: string) {
         const index = questionlist.value.findIndex(q => q.counter === counter);
         const zoomlevel = questionlist.value[index]?.zoomlevel || 15;
         const center = questionlist.value[index]?.center || [0, 0];
         if (index !== -1) {
-            questionlist.value[index] = { counter, zoomlevel, center, correct, wrong };
+            questionlist.value[index] = { counter, zoomlevel, center, correct, wrong, question };
         }
     }
 
@@ -38,7 +38,7 @@ export const useGameStore = defineStore('game', () => {
     }
 
     function typeCheck(obj: any): boolean {
-        if (['counter', 'zoomlevel', 'center', 'correct', 'wrong'].some(prop => !(prop in obj))) {
+        if (['counter', 'zoomlevel', 'center', 'correct', 'wrong', 'question'].some(prop => !(prop in obj))) {
             return false;
         }
 
@@ -54,6 +54,9 @@ export const useGameStore = defineStore('game', () => {
         if (!Array.isArray(obj.wrong)) {
             return false;
         }
+        if (typeof obj.question !== 'string') {
+            return false;
+        }
         return true;
     }
 
@@ -64,6 +67,9 @@ export const useGameStore = defineStore('game', () => {
         }
         if (!questions.every(typeCheck)) {
             throw new Error("Invalid question format");
+        }
+        if (questions[0].counter !== 1) {
+            questions = questions.map((q, index) => ({ ...q, counter: index + 1 }));
         }
         questionlist.value = questions;
         counter.value = questions.length > 0 ? Math.max(...questions.map(q => q.counter)) + 1 : 1;

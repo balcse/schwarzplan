@@ -1,48 +1,26 @@
 <template>
     <div>
-        <p>Welche Stadt sieht man hier?</p>
-        <div class="flex align-items-center gap-2" v-if="newQuestion">
+        <AutoComplete :suggestions="filteredQuestions" v-model="question" placeholder="Frage auswählen oder neue eingeben..." dropdown @complete="searchQuestions" class="w-100" :disabled="!newQuestion"/>
+        <Divider />
         <div class="answer-row-flex">
             <IftaLabel>
-                <InputText id="correct" placeholder="Richtig" v-model="correct" />
+                <InputText id="correct" placeholder="Richtig" v-model="correct" :disabled="!newQuestion"/>
                 <label for="correct">Richtige Antwort</label>
             </IftaLabel>
             <IftaLabel>
-                <InputText id="wrong1" placeholder="Falsch" v-model="wrong1" />
+                <InputText id="wrong1" placeholder="Falsch" v-model="wrong1" :disabled="!newQuestion"/>
                 <label for="wrong1">Falsche Antwort 1</label>
             </IftaLabel>
             <IftaLabel>
-                <InputText id="wrong2" placeholder="Falsch" v-model="wrong2" />
+                <InputText id="wrong2" placeholder="Falsch" v-model="wrong2" :disabled="!newQuestion"/>
                 <label for="wrong2">Falsche Antwort 2</label>
             </IftaLabel>
             <IftaLabel>
-                <InputText id="wrong3" placeholder="Falsch" v-model="wrong3" />
+                <InputText id="wrong3" placeholder="Falsch" v-model="wrong3" :disabled="!newQuestion"/>
                 <label for="wrong3">Falsche Antwort 3</label>
             </IftaLabel>
         </div>
         <Button v-if="newQuestion" @click="submitAnswers">{{ newQuestion ? 'Frage erstellen' : 'Antwortmöglichkeiten aktualisieren' }}</Button>
-        </div>
-        <div v-else class="flex align-items-center gap-2">
-        <div class="answer-row-flex">
-            <IftaLabel>
-                <InputText id="correct" placeholder="Richtig" v-model="correct" disabled />
-                <label for="correct">Richtige Antwort</label>
-            </IftaLabel>
-            <IftaLabel>
-                <InputText id="wrong1" placeholder="Falsch" v-model="wrong1" disabled />
-                <label for="wrong1">Falsche Antwort 1</label>
-            </IftaLabel>
-            <IftaLabel>
-                <InputText id="wrong2" placeholder="Falsch" v-model="wrong2" disabled/>
-                <label for="wrong2">Falsche Antwort 2</label>
-            </IftaLabel>
-            <IftaLabel>
-                <InputText id="wrong3" placeholder="Falsch" v-model="wrong3" disabled/>
-                <label for="wrong3">Falsche Antwort 3</label>
-            </IftaLabel>
-        </div>
-            <!-- <Button @click="submitAnswers">{{ newQuestion ? 'Frage erstellen' : 'Antwortmöglichkeiten aktualisieren' }}</Button> -->
-        </div>
     </div>
 </template>
 
@@ -53,6 +31,7 @@ import InputText from 'primevue/inputtext';
 import { Divider } from 'primevue';
 import Button from 'primevue/button';
 import IftaLabel from 'primevue/iftalabel';
+import AutoComplete from 'primevue/autocomplete';
 
 const gameStore = useGameStore();
 
@@ -60,12 +39,16 @@ const correct = ref();
 const wrong1 = ref('');
 const wrong2 = ref('');
 const wrong3 = ref('');
+const questions = ref(["Welche Stadt sieht man hier?","Welche ist die dominante Bauperiode in diesem Ausschnitt?"]);
+const question = ref(questions.value[0]);
+const filteredQuestions = ref<string[]>([]);
 
 const props = withDefaults(defineProps<{
     correct: string;
     wrong: string[];
     newQuestion?: boolean;
     questionCounter?: number;
+    question?: string;
 }>(), {
     correct: '',
     wrong: () => ['', '', ''],
@@ -75,6 +58,7 @@ const props = withDefaults(defineProps<{
 
 onMounted(() => {
     correct.value = props.correct;
+    question.value = props.question || questions.value[0];
     wrong1.value = props.wrong[0] || '';
     wrong2.value = props.wrong[1] || '';
     wrong3.value = props.wrong[2] || '';
@@ -82,13 +66,14 @@ onMounted(() => {
 
 
 const emit = defineEmits<{
-    (e: 'submit', payload: { correct: string; wrong: string[], questionCounter: number }): void;
+    (e: 'submit', payload: { correct: string; wrong: string[], questionCounter: number, question: string }): void;
 }>();
 
 function submitAnswers() {
     emit('submit', {
         correct: correct.value,
         wrong: [wrong1.value, wrong2.value, wrong3.value],
+        question: question.value,
         questionCounter: props.questionCounter || 0
     });
     if (props.newQuestion) {
@@ -99,6 +84,14 @@ function submitAnswers() {
     }
 }
 
+
+function searchQuestions(event: { query: string }) {
+    console.log("searchQuestions", event);
+    let _items = questions.value;
+    questions.value = _items;
+    filteredQuestions.value = event.query ? _items.filter((q: string) => q.toLowerCase().includes(event.query.toLowerCase())) : _items;
+
+}
 </script>
 
 
