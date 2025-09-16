@@ -2,33 +2,50 @@
   {
     "counter":1,
     "center":[
-      52.06413,
-      20.98436
+      53.22141,
+      -4.20329
     ],
     "zoomlevel":15,
-    "correct":"Jazgarzewszczyzna",
+    "correct":"Llanfairpwllgwyngyll",
     "wrong":[
-      "Nemesboldogasszonyfa",
-      "Annerveenschekanaal",
-      "Jászfelsőszentgyörgy"
-    ]
+      "Mittelschaeffolsheim",
+      "Nová Ves u Nového Města na Moravě",
+      "Gschlachtenbretzingen"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":2,
     "center":[
-      49.08817,
-      9.75404
+      55.29002,
+      25.65506
     ],
     "zoomlevel":15,
-    "correct":"Gschlachtenbretzingen",
+    "correct":"Zvaigzdziakalnis",
     "wrong":[
-      "Rhosllannerchrugog",
-      "Przedmieście Szczebrzeszyńskie",
-      "Jazgarzewszczyzna"
-    ]
+      "Llanfairpwllgwyngyll",
+      "Mittelschaeffolsheim",
+      "Rhosllannerchrugog"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":3,
+    "center":[
+      53.077803,
+      6.800737
+    ],
+    "zoomlevel":15,
+    "correct":"Annerveenschekanaal",
+    "wrong":[
+      "Rhosllannerchrugog",
+      "Mittelschaeffolsheim",
+      "Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson"
+    ],
+    "question":"Welche Stadt sieht man hier?"
+  },
+  {
+    "counter":4,
     "center":[
       52.89228,
       17.69194
@@ -36,13 +53,59 @@
     "zoomlevel":15,
     "correct":"Brzyskorzystewko",
     "wrong":[
+      "Jazgarzewszczyzna",
       "Zvaigzdziakalnis",
-      "Annerveenschekanaal",
-      "Jászfelsőszentgyörgy"
-    ]
+      "Gschlachtenbretzingen"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
-    "counter":4,
+    "counter":5,
+    "center":[
+      46.76081,
+      17.15528
+    ],
+    "zoomlevel":15,
+    "correct":"Nemesboldogasszonyfa",
+    "wrong":[
+      "Przedmieście Szczebrzeszyńskie",
+      "Jazgarzewszczyzna",
+      "Zvaigzdziakalnis"
+    ],
+    "question":"Welche Stadt sieht man hier?"
+  },
+  {
+    "counter":6,
+    "center":[
+      49.539772,
+      16.086488
+    ],
+    "zoomlevel":15,
+    "correct":"Nová Ves u Nového Města na Moravě",
+    "wrong":[
+      "Jazgarzewszczyzna",
+      "Nemesboldogasszonyfa",
+      "Przedmieście Szczebrzeszyńskie"
+    ],
+    "question":"Welche Stadt sieht man hier?"
+  },
+  {
+    "counter":7,
+    "center":[
+      48.700749,
+      7.650879
+    ],
+    "zoomlevel":15,
+    "correct":"Mittelschaeffolsheim",
+    "wrong":[
+      "Nemesboldogasszonyfa",
+      "Brzyskorzystewko",
+      "Przedmieście Szczebrzeszyńskie"
+    ],
+    "question":"Welche Stadt sieht man hier?"
+  },
+  {
+    "counter":8,
     "center":[
       53.009966,
       -3.056333
@@ -51,96 +114,28 @@
     "correct":"Rhosllannerchrugog",
     "wrong":[
       "Nemesboldogasszonyfa",
-      "Jászfelsőszentgyörgy",
-      "Llanfairpwllgwyngyll"
-    ]
-  },
-  {
-    "counter":5,
-    "center":[
-      53.077803,
-      6.800737
-    ],
-    "zoomlevel":15,
-    "correct":"Annerveenschekanaal",
-    "wrong":[
-      "Gschlachtenbretzingen",
-      "Jazgarzewszczyzna",
+      "Zvaigzdziakalnis",
       "Gschlachtenbretzingen"
-    ]
-  },
-  {
-    "counter":6,
-    "center":[
-      49.08817,
-      9.75404
     ],
-    "zoomlevel":15,
-    "correct":"Gschlachtenbretzingen",
-    "wrong":[
-      "Nová Ves u Nového Města na Moravě",
-      "Nemesboldogasszonyfa",
-      "Jászfelsőszentgyörgy"
-    ]
-  },
-  {
-    "counter":7,
-    "center":[
-      48.627415,
-      4.649772
-    ],
-    "zoomlevel":15,
-    "correct":"Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson",
-    "wrong":[
-      "Jazgarzewszczyzna",
-      "Gschlachtenbretzingen",
-      "Przedmieście Szczebrzeszyńskie"
-    ]
-  },
-  {
-    "counter":8,
-    "center":[
-      50.81814,
-      22.76238
-    ],
-    "zoomlevel":15,
-    "correct":"Przedmieście Szczebrzeszyńskie",
-    "wrong":[
-      "Rhosllannerchrugog",
-      "Nemesboldogasszonyfa",
-      "Mittelschaeffolsheim"
-    ]
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":9,
     "center":[
-      49.539772,
-      16.086488
+      52.06413,
+      20.98436
     ],
     "zoomlevel":15,
-    "correct":"Nová Ves u Nového Města na Moravě",
+    "correct":"Jazgarzewszczyzna",
     "wrong":[
-      "Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson",
-      "Brzyskorzystewko",
-      "Gschlachtenbretzingen"
-    ]
+      "Gschlachtenbretzingen",
+      "Przedmieście Szczebrzeszyńskie",
+      "Annerveenschekanaal"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":10,
-    "center":[
-      46.76081,
-      17.15528
-    ],
-    "zoomlevel":15,
-    "correct":"Nemesboldogasszonyfa",
-    "wrong":[
-      "Gschlachtenbretzingen",
-      "Llanfairpwllgwyngyll",
-      "Zvaigzdziakalnis"
-    ]
-  },
-  {
-    "counter":11,
     "center":[
       47.506985,
       19.79249
@@ -148,51 +143,69 @@
     "zoomlevel":15,
     "correct":"Jászfelsőszentgyörgy",
     "wrong":[
-      "Mittelschaeffolsheim",
-      "Llanfairpwllgwyngyll",
-      "Annerveenschekanaal"
-    ]
+      "Nová Ves u Nového Města na Moravě",
+      "Nemesboldogasszonyfa",
+      "Gschlachtenbretzingen"
+    ],
+    "question":"Welche Stadt sieht man hier?"
+  },
+  {
+    "counter":11,
+    "center":[
+      49.08817,
+      9.75404
+    ],
+    "zoomlevel":15,
+    "correct":"Gschlachtenbretzingen",
+    "wrong":[
+      "Zvaigzdziakalnis",
+      "Annerveenschekanaal",
+      "Nová Ves u Nového Města na Moravě"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":12,
     "center":[
-      55.29002,
-      25.65506
+      48.627415,
+      4.649772
     ],
     "zoomlevel":15,
-    "correct":"Zvaigzdziakalnis",
+    "correct":"Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson",
     "wrong":[
       "Annerveenschekanaal",
-      "Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson",
-      "Nová Ves u Nového Města na Moravě"
-    ]
+      "Brzyskorzystewko",
+      "Zvaigzdziakalnis"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":13,
     "center":[
-      53.22141,
-      -4.20329
+      49.08817,
+      9.75404
     ],
     "zoomlevel":15,
-    "correct":"Llanfairpwllgwyngyll",
+    "correct":"Gschlachtenbretzingen",
     "wrong":[
-      "Brzyskorzystewko",
-      "Nová Ves u Nového Města na Moravě",
-      "Gschlachtenbretzingen"
-    ]
+      "Jazgarzewszczyzna",
+      "Annerveenschekanaal"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":14,
     "center":[
-      48.700749,
-      7.650879
+      50.81814,
+      22.76238
     ],
     "zoomlevel":15,
-    "correct":"Mittelschaeffolsheim",
+    "correct":"Przedmieście Szczebrzeszyńskie",
     "wrong":[
-      "Gschlachtenbretzingen",
-      "Brzyskorzystewko",
-      "Gschlachtenbretzingen"
-    ]
+      "Jazgarzewszczyzna",
+      "Nemesboldogasszonyfa",
+      "Mittelschaeffolsheim"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   }
 ]

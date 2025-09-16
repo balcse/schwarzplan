@@ -9,13 +9,15 @@
         <div class="setup-flex-item">
             <Button v-if="!ShowUpload" @click="ShowUpload = !ShowUpload">{{ 'Fragen hochladen' }}</Button>
             <UploadQuestions v-if="ShowUpload && gameStore.questionlist.length === 0" />
-            <p>Neue Frage erstellen</p>
-            <Setup
+            <Button @click="newQuestion = !newQuestion">Neue Frage</Button>
+            <div v-if="newQuestion">
+            <AddQuestion
                 @submit="handleSubmit"
                 :newQuestion="true"
                 :correct="''"
                 :wrong="[]"
             />
+            </div>
             <div class="setup-question-list">
                 <QuestionList @question:select="handleQuestionSelect" />
             </div>
@@ -26,13 +28,12 @@
 <script setup lang="ts">
 
 import Map from './Map.vue';
-import Setup from './AddQuestion.vue';
+import AddQuestion from './AddQuestion.vue';
 import QuestionList from './QuestionList.vue';
 import { ref } from 'vue';
 import { useGameStore } from '../stores/game.ts';
 import { Button } from 'primevue';
 import UploadQuestions from './UploadQuestions.vue';
-
 
 const gameStore = useGameStore();
 const mapextent = ref({
@@ -44,6 +45,7 @@ const mapextent = ref({
 const mapRef = ref();
 const basemapVisible = ref(true);
 const ShowUpload = ref(false);
+const newQuestion = ref(false);
 
 function handleMapExtentUpdate(newExtent: { lat: number; lon: number; zoom: number; }) {
     mapextent.value = {
@@ -63,15 +65,17 @@ function handleQuestionSelect(question: any) {
     // Handle the selected question as needed
 }
 
-function handleSubmit(payload: { correct: string; wrong: string[] }) {
+function handleSubmit(payload: { correct: string; wrong: string[]; question: string }) {
     // Get the latest map extent from the Map component
     const currentExtent = mapRef.value?.getMapExtent?.() || mapextent.value;
     gameStore.addQuestion(
         currentExtent.zoom,
         [currentExtent.lat, currentExtent.lon],
         payload.correct,
-        payload.wrong
+        payload.wrong,
+        payload.question
     );
+    newQuestion.value = false;
 
     // Handle the submitted answers as needed
 }

@@ -2,225 +2,241 @@
   {
     "counter":1,
     "center":[
-      53.627414,
-      11.41505
+      53.075537,
+      8.808476
     ],
-    "zoomlevel":13,
-    "correct":"Schwerin",
+    "zoomlevel":15,
+    "correct":"Bremen",
     "wrong":[
-      "Hannover",
-      "Berlin",
-      "Wiesbaden"
-    ]
+      "Dresden",
+      "Düsseldorf",
+      "Schwerin"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":2,
     "center":[
-      53.075537,
-      8.808476
+      51.225243,
+      6.77643
     ],
-    "zoomlevel":13,
-    "correct":"Bremen",
+    "zoomlevel":15,
+    "correct":"Düsseldorf",
     "wrong":[
-      "Saarbrücken",
-      "Dresden",
-      "Koblenz"
-    ]
+      "Bremen",
+      "Wiesbaden",
+      "Berlin"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":3,
     "center":[
-      54.320937,
-      10.136263
+      50.080693,
+      8.239705
     ],
-    "zoomlevel":13,
-    "correct":"Kiel",
+    "zoomlevel":15,
+    "correct":"Wiesbaden",
     "wrong":[
-      "Hamburg",
-      "Düsseldorf",
-      "Koblenz"
-    ]
+      "Potsdam",
+      "Schwerin",
+      "Kiel"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":4,
     "center":[
-      48.136832,
-      11.576539
+      49.233582,
+      6.99548
     ],
-    "zoomlevel":13,
-    "correct":"München",
+    "zoomlevel":15,
+    "correct":"Saarbrücken",
     "wrong":[
-      "Erfurt",
-      "Kiel",
-      "Schwerin"
-    ]
+      "Hannover",
+      "Magdeburg",
+      "Bremen"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":5,
     "center":[
-      48.775764,
-      9.177591
+      50.97787,
+      11.028967
     ],
-    "zoomlevel":13,
-    "correct":"Stuttgart",
+    "zoomlevel":15,
+    "correct":"Erfurt",
     "wrong":[
-      "Koblenz",
-      "Bremen",
-      "Düsseldorf"
-    ]
+      "Wiesbaden",
+      "Kiel",
+      "Magdeburg"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":6,
     "center":[
-      52.516983,
-      13.398018
+      51.050266,
+      13.739284
     ],
-    "zoomlevel":13,
-    "correct":"Berlin",
+    "zoomlevel":15,
+    "correct":"Dresden",
     "wrong":[
-      "Wiesbaden",
-      "Kiel",
-      "Potsdam"
-    ]
+      "Hamburg",
+      "Stuttgart",
+      "Schwerin"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":7,
     "center":[
-      49.233582,
-      6.99548
+      48.136832,
+      11.576539
     ],
-    "zoomlevel":13,
-    "correct":"Saarbrücken",
+    "zoomlevel":15,
+    "correct":"München",
     "wrong":[
-      "Koblenz",
+      "Düsseldorf",
       "Wiesbaden",
-      "Hamburg"
-    ]
+      "Hannover"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":8,
     "center":[
-      51.225243,
-      6.77643
+      52.516983,
+      13.398018
     ],
-    "zoomlevel":13,
-    "correct":"Düsseldorf",
+    "zoomlevel":15,
+    "correct":"Berlin",
     "wrong":[
-      "Stuttgart",
-      "Hannover",
+      "Schwerin",
+      "Erfurt",
       "Koblenz"
-    ]
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":9,
     "center":[
-      51.050266,
-      13.739284
+      52.131149,
+      11.639579
     ],
-    "zoomlevel":13,
-    "correct":"Dresden",
+    "zoomlevel":15,
+    "correct":"Magdeburg",
     "wrong":[
-      "Hannover",
-      "Bremen",
-      "Stuttgart"
-    ]
+      "Stuttgart",
+      "Dresden",
+      "Erfurt"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":10,
     "center":[
-      52.400374,
-      13.056441
+      50.353353,
+      7.592952
     ],
-    "zoomlevel":13,
-    "correct":"Potsdam",
+    "zoomlevel":15,
+    "correct":"Koblenz",
     "wrong":[
-      "Bremen",
-      "Koblenz",
-      "Hamburg"
-    ]
+      "Düsseldorf",
+      "Hamburg",
+      "Magdeburg"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":11,
     "center":[
-      50.353353,
-      7.592952
+      52.400374,
+      13.056441
     ],
-    "zoomlevel":13,
-    "correct":"Koblenz",
+    "zoomlevel":15,
+    "correct":"Potsdam",
     "wrong":[
-      "Magdeburg",
-      "Stuttgart",
-      "Berlin"
-    ]
+      "Wiesbaden",
+      "Dresden",
+      "Stuttgart"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":12,
     "center":[
-      53.54983,
-      10.00052
+      53.627414,
+      11.41505
     ],
-    "zoomlevel":13,
-    "correct":"Hamburg",
+    "zoomlevel":15,
+    "correct":"Schwerin",
     "wrong":[
-      "Schwerin",
-      "Düsseldorf",
-      "Erfurt"
-    ]
+      "Hamburg",
+      "Koblenz",
+      "Potsdam"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":13,
     "center":[
-      50.97787,
-      11.028967
+      52.373889,
+      9.738497
     ],
-    "zoomlevel":13,
-    "correct":"Erfurt",
+    "zoomlevel":15,
+    "correct":"Hannover",
     "wrong":[
-      "Schwerin",
-      "Stuttgart",
-      "Berlin"
-    ]
+      "Erfurt",
+      "Berlin",
+      "Hamburg"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":14,
     "center":[
-      52.373889,
-      9.738497
+      54.320937,
+      10.136263
     ],
-    "zoomlevel":13,
-    "correct":"Hannover",
+    "zoomlevel":15,
+    "correct":"Kiel",
     "wrong":[
-      "Hamburg",
-      "Potsdam",
-      "Koblenz"
-    ]
+      "München",
+      "Koblenz",
+      "Stuttgart"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":15,
     "center":[
-      52.131149,
-      11.639579
+      48.775764,
+      9.177591
     ],
-    "zoomlevel":13,
-    "correct":"Magdeburg",
+    "zoomlevel":15,
+    "correct":"Stuttgart",
     "wrong":[
-      "Stuttgart",
-      "Hamburg",
-      "Wiesbaden"
-    ]
+      "Hannover",
+      "Berlin",
+      "Erfurt"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":16,
     "center":[
-      50.080693,
-      8.239705
+      53.54983,
+      10.00052
     ],
-    "zoomlevel":13,
-    "correct":"Wiesbaden",
+    "zoomlevel":15,
+    "correct":"Hamburg",
     "wrong":[
-      "Schwerin",
-      "Dresden",
-      "Hannover"
-    ]
+      "Erfurt",
+      "Berlin",
+      "Schwerin"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   }
 ]

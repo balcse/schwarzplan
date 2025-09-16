@@ -2,379 +2,406 @@
   {
     "counter":1,
     "center":[
-      59.437597,
-      24.745399
+      53.348765,
+      -6.261174
     ],
-    "zoomlevel":13,
-    "correct":"Tallin",
+    "zoomlevel":15,
+    "correct":"Dublin",
     "wrong":[
-      "Rom",
       "Wien",
-      "Amsterdam"
-    ]
+      "Athen",
+      "Prag"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":2,
     "center":[
-      54.682097,
-      25.286986
+      59.437597,
+      24.745399
     ],
-    "zoomlevel":13,
-    "correct":"Vilnius",
+    "zoomlevel":15,
+    "correct":"Tallin",
     "wrong":[
-      "Warschau",
-      "Nicosia",
-      "Rom"
-    ]
+      "Brüssel",
+      "Madrid",
+      "Sofia"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":3,
     "center":[
-      52.517415,
-      13.393369
+      56.947708,
+      24.107852
     ],
-    "zoomlevel":13,
-    "correct":"Berlin",
+    "zoomlevel":15,
+    "correct":"Riga",
     "wrong":[
-      "Athen",
       "Vilnius",
-      "Dublin"
-    ]
+      "Lissabon",
+      "Madrid"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":4,
     "center":[
-      47.491044,
-      19.05042
+      37.976401,
+      23.726125
     ],
-    "zoomlevel":13,
-    "correct":"Budapest",
+    "zoomlevel":15,
+    "correct":"Athen",
     "wrong":[
-      "Paris",
-      "Sofia",
-      "Luxemburg"
-    ]
+      "Madrid",
+      "Ljubljana",
+      "Tallin"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":5,
     "center":[
-      52.371619,
-      4.901036
+      48.206024,
+      16.369855
     ],
-    "zoomlevel":13,
-    "correct":"Amsterdam",
+    "zoomlevel":15,
+    "correct":"Wien",
     "wrong":[
-      "Zagreb",
-      "Bukarest",
-      "Stockholm"
-    ]
+      "Warschau",
+      "Vilnius",
+      "Helsinki"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":6,
     "center":[
-      53.348765,
-      -6.261174
+      47.491044,
+      19.05042
     ],
-    "zoomlevel":13,
-    "correct":"Dublin",
+    "zoomlevel":15,
+    "correct":"Budapest",
     "wrong":[
-      "Vilnius",
-      "Berlin",
-      "Ljubljana"
-    ]
+      "Helsinki",
+      "Amsterdam",
+      "Stockholm"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":7,
     "center":[
-      50.086405,
-      14.412716
+      40.416846,
+      -3.703761
     ],
-    "zoomlevel":13,
-    "correct":"Prag",
+    "zoomlevel":15,
+    "correct":"Madrid",
     "wrong":[
+      "Tallin",
       "Bratislava",
-      "Athen",
-      "Sofia"
-    ]
+      "Vilnius"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":8,
     "center":[
-      46.050108,
-      14.50683
+      52.371619,
+      4.901036
     ],
-    "zoomlevel":13,
-    "correct":"Ljubljana",
+    "zoomlevel":15,
+    "correct":"Amsterdam",
     "wrong":[
-      "Stockholm",
-      "Vilnius",
-      "Sofia"
-    ]
+      "Tallin",
+      "Wien",
+      "Madrid"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":9,
     "center":[
-      44.431263,
-      26.101768
+      55.677035,
+      12.585253
     ],
-    "zoomlevel":13,
-    "correct":"Bukarest",
+    "zoomlevel":15,
+    "correct":"Kopenhagen",
     "wrong":[
-      "Budapest",
-      "Helsinki",
-      "Lissabon"
-    ]
+      "Luxemburg",
+      "Paris",
+      "Zagreb"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":10,
     "center":[
-      59.325111,
-      18.071141
+      60.167603,
+      24.942042
     ],
-    "zoomlevel":13,
-    "correct":"Stockholm",
+    "zoomlevel":15,
+    "correct":"Helsinki",
     "wrong":[
-      "Sofia",
-      "Berlin",
-      "Lissabon"
-    ]
+      "Riga",
+      "Madrid",
+      "Berlin"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":11,
     "center":[
-      56.947708,
-      24.107852
+      35.170792,
+      33.363981
     ],
-    "zoomlevel":13,
-    "correct":"Riga",
+    "zoomlevel":15,
+    "correct":"Nicosia",
     "wrong":[
-      "Prag",
-      "Tallin",
-      "Nicosia"
-    ]
+      "Zagreb",
+      "Amsterdam",
+      "Vilnius"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":12,
     "center":[
-      42.696847,
-      23.321052
+      59.325111,
+      18.071141
     ],
-    "zoomlevel":13,
-    "correct":"Sofia",
+    "zoomlevel":15,
+    "correct":"Stockholm",
     "wrong":[
-      "Budapest",
-      "Lissabon",
-      "Ljubljana"
-    ]
+      "Nicosia",
+      "Vilnius",
+      "Bratislava"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":13,
     "center":[
-      45.812855,
-      15.978194
+      49.611969,
+      6.131068
     ],
-    "zoomlevel":13,
-    "correct":"Zagreb",
+    "zoomlevel":15,
+    "correct":"Luxemburg",
     "wrong":[
-      "Ljubljana",
-      "Budapest",
-      "Riga"
-    ]
+      "Brüssel",
+      "Bratislava",
+      "Budapest"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":14,
     "center":[
-      48.148888,
-      17.109876
+      42.696847,
+      23.321052
     ],
-    "zoomlevel":13,
-    "correct":"Bratislava",
+    "zoomlevel":15,
+    "correct":"Sofia",
     "wrong":[
-      "Amsterdam",
-      "Vilnius",
-      "Brüssel"
-    ]
+      "Helsinki",
+      "Tallin",
+      "Amsterdam"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":15,
     "center":[
-      60.167603,
-      24.942042
+      35.898354,
+      14.512695
     ],
-    "zoomlevel":13,
-    "correct":"Helsinki",
+    "zoomlevel":15,
+    "correct":"Valetta",
     "wrong":[
-      "Berlin",
-      "Brüssel",
-      "Budapest"
-    ]
+      "Bratislava",
+      "Kopenhagen",
+      "Bukarest"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":16,
     "center":[
-      48.206024,
-      16.369855
+      48.853941,
+      2.347694
     ],
-    "zoomlevel":13,
-    "correct":"Wien",
+    "zoomlevel":15,
+    "correct":"Paris",
     "wrong":[
-      "Rom",
-      "Bukarest",
-      "Stockholm"
-    ]
+      "Amsterdam",
+      "Warschau",
+      "Ljubljana"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":17,
     "center":[
-      35.170792,
-      33.363981
+      48.148888,
+      17.109876
     ],
-    "zoomlevel":13,
-    "correct":"Nicosia",
+    "zoomlevel":15,
+    "correct":"Bratislava",
     "wrong":[
-      "Vilnius",
-      "Zagreb",
-      "Luxemburg"
-    ]
+      "Brüssel",
+      "Sofia",
+      "Valetta"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":18,
     "center":[
-      48.853941,
-      2.347694
+      41.892648,
+      12.485901
     ],
-    "zoomlevel":13,
-    "correct":"Paris",
+    "zoomlevel":15,
+    "correct":"Rom",
     "wrong":[
-      "Bukarest",
-      "Budapest",
-      "Kopenhagen"
-    ]
+      "Ljubljana",
+      "Vilnius",
+      "Zagreb"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":19,
     "center":[
-      37.976401,
-      23.726125
+      38.709313,
+      -9.13734
     ],
-    "zoomlevel":13,
-    "correct":"Athen",
+    "zoomlevel":15,
+    "correct":"Lissabon",
     "wrong":[
-      "Luxemburg",
-      "Valetta",
-      "Helsinki"
-    ]
+      "Sofia",
+      "Madrid",
+      "Riga"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":20,
     "center":[
-      38.709313,
-      -9.13734
+      45.812855,
+      15.978194
     ],
-    "zoomlevel":13,
-    "correct":"Lissabon",
+    "zoomlevel":15,
+    "correct":"Zagreb",
     "wrong":[
-      "Budapest",
-      "Brüssel",
-      "Helsinki"
-    ]
+      "Paris",
+      "Sofia",
+      "Ljubljana"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":21,
     "center":[
-      50.847571,
-      4.352293
+      46.050108,
+      14.50683
     ],
-    "zoomlevel":13,
-    "correct":"Brüssel",
+    "zoomlevel":15,
+    "correct":"Ljubljana",
     "wrong":[
-      "Bratislava",
-      "Ljubljana",
-      "Rom"
-    ]
+      "Helsinki",
+      "Lissabon",
+      "Bratislava"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":22,
     "center":[
-      52.232488,
-      21.014303
+      54.682097,
+      25.286986
     ],
-    "zoomlevel":13,
-    "correct":"Warschau",
+    "zoomlevel":15,
+    "correct":"Vilnius",
     "wrong":[
-      "Paris",
-      "Madrid",
-      "Brüssel"
-    ]
+      "Sofia",
+      "Riga",
+      "Stockholm"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":23,
     "center":[
-      49.611969,
-      6.131068
+      50.086405,
+      14.412716
     ],
-    "zoomlevel":13,
-    "correct":"Luxemburg",
+    "zoomlevel":15,
+    "correct":"Prag",
     "wrong":[
-      "Riga",
-      "Kopenhagen",
-      "Warschau"
-    ]
+      "Bukarest",
+      "Dublin",
+      "Nicosia"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":24,
     "center":[
-      35.898354,
-      14.512695
+      52.517415,
+      13.393369
     ],
-    "zoomlevel":13,
-    "correct":"Valetta",
+    "zoomlevel":15,
+    "correct":"Berlin",
     "wrong":[
-      "Zagreb",
-      "Lissabon",
+      "Budapest",
+      "Brüssel",
       "Wien"
-    ]
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":25,
     "center":[
-      40.416846,
-      -3.703761
+      44.431263,
+      26.101768
     ],
-    "zoomlevel":13,
-    "correct":"Madrid",
+    "zoomlevel":15,
+    "correct":"Bukarest",
     "wrong":[
-      "Athen",
-      "Bukarest",
-      "Stockholm"
-    ]
+      "Luxemburg",
+      "Lissabon",
+      "Nicosia"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":26,
     "center":[
-      55.677035,
-      12.585253
+      52.232488,
+      21.014303
     ],
-    "zoomlevel":13,
-    "correct":"Kopenhagen",
+    "zoomlevel":15,
+    "correct":"Warschau",
     "wrong":[
       "Bukarest",
-      "Dublin",
-      "Athen"
-    ]
+      "Paris",
+      "Nicosia"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   },
   {
     "counter":27,
     "center":[
-      41.892648,
-      12.485901
+      50.847571,
+      4.352293
     ],
-    "zoomlevel":13,
-    "correct":"Rom",
+    "zoomlevel":15,
+    "correct":"Brüssel",
     "wrong":[
+      "Bukarest",
       "Ljubljana",
-      "Helsinki",
-      "Luxemburg"
-    ]
+      "Zagreb"
+    ],
+    "question":"Welche Stadt sieht man hier?"
   }
 ]

@@ -6,7 +6,7 @@
           Frage {{ index + 1 }}: {{ question.correct }}
         </AccordionHeader>
         <AccordionContent>
-          <AddQuestion :correct="question.correct" :wrong="question.wrong" :questionCounter="question.counter" @submit="handleSubmit" />
+          <AddQuestion :correct="question.correct" :wrong="question.wrong" :questionCounter="question.counter" :question="question.question" @submit="handleSubmit" />
           <Button icon="pi pi-trash" @click="gameStore.removeQuestion(question.counter)"></Button>
         </AccordionContent>
       </AccordionPanel>

@@ -1,6 +1,6 @@
 <template>
     <div v-if="question" :class="{ submitted }">
-        <h2>Welche Stadt sieht man hier?</h2>
+        <h2>{{ question.question }}</h2>
         <div class="flex flex-column gap-2">
             <div v-for="answer in allAnswers" :key="answer" :class="'answer-row ' + calcClass(answer) + (submitted ? ' submitted' : '')" @click="!submitted && selectAnswer(answer)">
                 <div class="answer-flex">
@@ -30,6 +30,7 @@ const props = defineProps<{
         center: [number, number];
         correct: string;
         wrong: string[];
+        question: string;
     }
 }>();
 

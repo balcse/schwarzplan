@@ -15,14 +15,15 @@ const selectedGame = ref<string | null>(null);
 const gameStore = useGameStore();
 
 const games = [
-    { filename: 'eu_hauptstaedte.json', name: 'EU-Hauptstädte'},
-    {filename: 'de_landeshauptstaedte.json', name: 'Deutsche Landeshauptstädte'},
-    {filename: 'long_names.json', name: 'Allgemeinwissen'},
+    { filename: 'eu_hauptstaedte.json', name: 'EU-Hauptstädte erkennen'},
+    {filename: 'de_landeshauptstaedte.json', name: 'Deutsche Landeshauptstädte erkennen'},
+    {filename: 'long_names.json', name: 'Weltstädte'},
+    {filename: 'bauperioden.json', name: 'Bauperioden erkennen'},
 ];
 
 async function selectGame(game: { filename: string; name: string }) {
     selectedGame.value = game.filename;
-    const response = await fetch(`https://raw.githubusercontent.com/balcse/schwarzplan/refs/heads/main/assets/games/${game.filename}`);
+    const response = await fetch(`assets/games/${game.filename}`);
     const data = await response.json();
     gameStore.loadQuestions(data);
 }
