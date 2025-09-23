@@ -23,8 +23,7 @@ const games = [
 
 async function selectGame(game: { filename: string; name: string }) {
     selectedGame.value = game.filename;
-    const response = await fetch(`http://localhost:5173/schwarzplan/assets/games/${game.filename}`);
-    const data = await response.json();
+    const response = await fetch(`https://raw.githubusercontent.com/balcse/schwarzplan/refs/heads/main/assets/games/${game.filename}`);    const data = await response.json();
     gameStore.loadQuestions(data);
 }
 
