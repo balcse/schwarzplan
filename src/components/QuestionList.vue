@@ -3,7 +3,7 @@
     <Accordion value="0">
       <AccordionPanel v-for="(question, index) in gameStore.questionlist" :key="index" :value="index" @click="selectQuestion(question)">
         <AccordionHeader>
-          Frage {{ index + 1 }}: {{ question.correct }}
+          Frage {{ index + 1 }}: {{ question.question }} <br /> richtig: {{ question.correct }}
         </AccordionHeader>
         <AccordionContent>
           <AddQuestion :correct="question.correct" :wrong="question.wrong" :questionCounter="question.counter" :question="question.question" @submit="handleSubmit" />

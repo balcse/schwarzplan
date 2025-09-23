@@ -12,8 +12,8 @@
                 </div>
             </div>
             <div v-else-if="gameStore.questionlist[i - 1].counter == currentQuestion && finished">
-                <h2>Quiz Fertig!</h2>
-                {{ correct }} von {{ correct + wrong }} richtig.
+                <h3>Quiz Fertig!</h3>
+                <h2>{{ correct }} ({{ (correct / (correct + wrong) * 100).toFixed(2) }}%) von {{ correct + wrong }}</h2>
                 <Button @click="currentQuestion = 1; finished = false; correct = 0; wrong = 0;">Nochmal Spielen</Button>
                 <Button
                     @click="currentQuestion = 1; finished = false; correct = 0; wrong = 0; gameStore.clearQuestions()">Neues

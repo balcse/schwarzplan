@@ -33,7 +33,7 @@ const mapextent = ref({ ...props.mapextent });
 
 function lockMapInteraction() {
     if (!map) return;
-    map.setMinZoom(props.mapextent.zoom);
+    map.setMinZoom(13);
 }
 
 function unlockMapInteraction() {
