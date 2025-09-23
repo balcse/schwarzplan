@@ -1,0 +1,182 @@
+[
+  {
+    "counter": 1,
+    "zoomlevel": 14.25420493089989,
+    "center": [
+      51.05116966310183,
+      13.73416137277809
+    ],
+    "correct": "Rekonstruktion historischer Achsen und Typenbauten",
+    "wrong": [
+      "Bau von Stadtmauern",
+      "Errichtung von Burgen",
+      "Großflächige Plattenbauten"
+    ],
+    "question": "Was ist ein typisches Merkmal des Wiederaufbaus nach 1945?"
+  },
+  {
+    "counter": 2,
+    "zoomlevel": 14.25420493089989,
+    "center": [
+      51.430448670092204,
+      6.975631672738444
+    ],
+    "correct": "Zentraler Park mit öffentlichen Einrichtungen",
+    "wrong": [
+      "Industrieanlagen",
+      "Schloss",
+      "Bahnhof"
+    ],
+    "question": "Was steht im Zentrum des Gartenstadt-Konzepts nach Ebenezer Howard?"
+  },
+  {
+    "counter": 3,
+    "zoomlevel": 14.397074111618696,
+    "center": [
+      52.49583982980383,
+      13.425262815118913
+    ],
+    "correct": "Mehrgeschossige Mietskasernen und regelmäßige Blockstruktur",
+    "wrong": [
+      "Einzelne Villen",
+      "Stadtmauern und Burgen",
+      "Großflächige Parks"
+    ],
+    "question": "Was ist typisch für die Gründerzeitviertel des 19. Jahrhunderts?"
+  },
+  {
+    "counter": 4,
+    "zoomlevel": 14.06011831561958,
+    "center": [
+      49.0139486147697,
+      8.4032477519836
+    ],
+    "correct": "Schloss mit strahlenförmigen Straßen",
+    "wrong": [
+      "Marktplatz",
+      "Industriegebiet",
+      "Bahnhof"
+    ],
+    "question": "Was ist das Zentrum einer Barockstadt wie ...?"
+  },
+  {
+    "counter": 5,
+    "zoomlevel": 15.12382012671817,
+    "center": [
+      50.71688487913352,
+      23.25238034192489
+    ],
+    "correct": "Geometrisches, schachbrettartiges Straßennetz",
+    "wrong": [
+      "Unregelmäßige Gassen",
+      "Sternförmige Straßenachsen",
+      "Organisch gewachsene Straßen"
+    ],
+    "question": "Was kennzeichnet den Grundriss einer Renaissance-Planstadt?"
+  },
+  {
+    "counter": 6,
+    "zoomlevel": 14.241804819394478,
+    "center": [
+      53.86743666275029,
+      10.687618006120147
+    ],
+    "correct": "Marktplatz mit Kirche und Rathaus",
+    "wrong": [
+      "Industrieanlage",
+      "Schloss mit Garten",
+      "Bahnhof"
+    ],
+    "question": "Welches Element liegt im Zentrum einer hochmittelalterlichen Stadt?"
+  },
+  {
+    "counter": 7,
+    "zoomlevel": 14.903316299887292,
+    "center": [
+      49.755261527607814,
+      6.641385820781352
+    ],
+    "correct": "Decumanus und Cardo",
+    "wrong": [
+      "Boulevard und Ringstraße",
+      "Avenue und Place",
+      "Hauptstraße und Nebenstraße"
+    ],
+    "question": "Wie heißen die beiden Hauptachsen im römischen Stadtgrundriss?"
+  },
+  {
+    "counter": 8,
+    "zoomlevel": 15.967018110985888,
+    "center": [
+      50.0996824113532,
+      8.660835210095797
+    ],
+    "correct": "Energieeffiziente Neubauten aus Glas und Holz",
+    "wrong": [
+      "Fachwerkhäuser",
+      "Stadtmauern",
+      "Typenbauten aus Beton"
+    ],
+    "question": "Welches architektonische Merkmal ist im Schwarzplan einer Stadt der 2000er Jahre besonders zu erkennen?"
+  },
+  {
+    "counter": 9,
+    "zoomlevel": 13.645527873508422,
+    "center": [
+      52.52441325705507,
+      13.597700609655021
+    ],
+    "correct": "Großsiedlungen in klaren Rasterstrukturen",
+    "wrong": [
+      "Einzelne Häuser in lockerer Streuung",
+      "Sternförmige Straßen",
+      "Historische Altstadtkerne"
+    ],
+    "question": "Wie sind die Gebäude im Schwarzplan einer Plattenbausiedlung typischerweise angeordnet?"
+  },
+  {
+    "counter": 10,
+    "zoomlevel": 15.668879638042881,
+    "center": [
+      50.98594712970652,
+      11.327049572378883
+    ],
+    "correct": "Monumentalachsen und symmetrische Anordnung",
+    "wrong": [
+      "Organisch gewachsene Straßen",
+      "Kleine Plätze und enge Gassen",
+      "Großflächige Grünanlagen"
+    ],
+    "question": "Welches Merkmal ist im Schwarzplan einer nationalsozialistischen Stadt besonders auffällig?"
+  },
+  {
+    "counter": 11,
+    "zoomlevel": 15.513610345818625,
+    "center": [
+      50.15177164708115,
+      8.632539689782334
+    ],
+    "correct": "Strikte Trennung von Wohnen, Arbeiten, Verkehr und Erholung",
+    "wrong": [
+      "Alle Funktionen gemischt",
+      "Nur Wohnnutzung",
+      "Nur Industrie und Handel"
+    ],
+    "question": "Wie sind die Funktionen im Schwarzplan einer Stadt nach der Charta von Athen typischerweise angeordnet?"
+  },
+  {
+    "counter": 12,
+    "zoomlevel": 15.513610345818625,
+    "center": [
+      49.48815174969894,
+      8.466626643209196
+    ],
+    "correct": "Schloss oder Rathaus am zentralen Platz",
+    "wrong": [
+      "Bahnhof",
+      "Industriegebiet",
+      "Einkaufszentrum"
+    ],
+    "question": "Welches Zentrum ist typisch für eine Renaissance-Planstadt?"
+  }
+]
